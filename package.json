@@ -1,10 +1,13 @@
 {
   "name": "tinted-windows",
   "version": "0.1.0",
-  "private": true,
+  "engines": "13.1.0"
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "@inkline/inkline": "^1.18.0",
@@ -20,8 +23,10 @@
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
+    "express": "^4.17.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
+    "serve-static": "^1.14.1",
     "vue-template-compiler": "^2.6.10"
   }
 }
