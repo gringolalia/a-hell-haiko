@@ -1,9 +1,6 @@
 {
   "name": "tinted-windows",
-  "version": "0.1.0",
-  "engines": "13.1.0"
-  "private": false,
-  "scripts": {
+  "scripts": {  
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "postinstall": "npm run build",
